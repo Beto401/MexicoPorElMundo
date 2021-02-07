@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Estilos-->
+     <link rel="stylesheet" href="estilos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEXICO POR EL MUNDO</title>
+</head>
+<body>
+    <div id="menuVertical" class="menuEscondido">
+        <!--Header-->
+        <div id="header">
+            <div id="titulo"><span>México por el mundo</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+               
+            </div>
+        </div>
+        <!--Profile-->
+         <div id="profile">
+             <div id="foto"><img src="Imagenes/Logo_mm.jpg" alt=""></div>
+             <div id="name"><span>Alberto Vázquez Ortíz</span></div>
+         </div>
+        <!--Items-->
+        <div id="menuItem">
+            <div class="item">
+                <a href="#BCS">
+                    <div class="icon"><img src="Imagenes/Republica.png" alt=""></div>
+                    <div class="title"><span>Viejas en la republica </span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#BCS">
+                    <div class="icon"><img src="Imagenes/bajaCalifornia.jpg" alt=""></div>
+                    <div class="title"><span>Baja California Sur </span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#d2Guerrero">
+                    <div class="icon"><img src="Imagenes/acapulco.jpg" alt=""></div>
+                    <div class="title"><span>Guerrero </span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#d3Yucatan">
+                    <div class="icon"><img src="Imagenes/Yucatan.jpg" alt=""></div>
+                    <div class="title"><span>Yucatán </span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#d4Quintana">
+                    <div class="icon"><img src="Imagenes/quintanaroo.jpg" alt=""></div>
+                    <div class="title"><span>Quintana Roo </span></div>
+                </a>
+            </div>
+
+            <div class="item separator">
+
+            </div>
+
+            <div class="item">
+                <a href="#d1iColombia">
+                    <div class="icon"><img src="Imagenes/Mundo.png" alt=""></div>
+                    <div class="title"><span>Viejas Internacionales</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#d1iColombia">
+                    <div class="icon"><img src="Imagenes/colombia.jpg" alt=""></div>
+                    <div class="title"><span>Colombia</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#Chile">
+                    <div class="icon"><img src="Imagenes/chile.jpg" alt=""></div>
+                    <div class="title"><span>Chile</span></div>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+    
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#menuVertical');
+        
+        btn.addEventListener('click', function (e) {
+            //prompt("Dame un nuemro");
+            menu.classList.toggle('menuEscondido');
+            menu.classList.toggle("menuExpandido");
+
+            document.querySelector('body').classList.toggle('bodyExpanded');
+        });
+    </script>
+
+
+
+    <!-----------------------Presentación  ----------------------->
+    <section id="inicio">
+        <div id="titulo">México por el mudno</div>
+    </section>
+
+    <section id="tituloApartados">
+        <div id="eslogan"> ¡Viaja bien, viaja seguro!</div>
+    </section>
+    <div id="contenedorContenidoApartados">
+        <div id="contenidoApartados">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolores alias in quae ipsum, facilis numquam, cum illo natus error dolore molestias, dolorum cumque quo nobis soluta debitis? Officia, molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus libero obcaecati iure repudiandae, ut saepe, quibusdam ipsam necessitatibus molestias sunt ipsum ducimus perferendis laudantium quidem tempore incidunt tempora quod! Iste!</div>
+        
+        <div class="contenedorImgApartado" id="contenidoApartadosImg">
+            <img src="Imagenes/viajesMundo.jpg" alt="">
+            <div id="contenidoImg">
+                <div id= "contenidoVariablePosicion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolores alias in quae ipsum, facilis numquam, cum illo natus error dolore molestias, dolorum cumque quo nobis soluta debitis? Officia, molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus libero obcaecati iure repudiandae, ut saepe, quibusdam ipsam necessitatibus molestias sunt ipsum ducimus perferendis laudantium quidem tempore incidunt tempora quod! Iste!</div>
+            </div>
+        </div>
+       
+    </div>
+
+    <aside  class="promociones">
+        <div id="promo">Promociones </div>
+        <div id="acapulco">Acapulco </div>
+        
+        <div id="descricionDePromo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quasi incidunt dolores voluptas repellat laudantium facilis qui, eos obcaecati magnam optio placeat natus odio vel in. Adipisci mollitia voluptas alias. </div>
+        <div id="imgPromo"><img src="Imagenes/acapulcoPromo.jpg" alt=""></div>
+    </aside>
+    <!-------------------------------------------------------------------->
+
+
+    <!-----------------------------------Secciones de viajes--------------------->
+    <section class="destinos" id="d1BCS">
+
+        <div class="titulos" id="BCS"><div class="lugar"> Baja California Sur</div></div>
+        <section class="precio" id="BCS">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/bajaCalifornia.jpg" alt="">
+            <div class="descrDestino" id="BCS">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quas laudantium, temporibus atque repellendus blanditiis reiciendis animi aperiam eveniet molestias corporis sit earum nihil beatae nulla eius sunt obcaecati aliquam?</div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="separador"></section>
+
+    <section class="destinos" id="d2Guerrero">
+        <div class="titulos" id="guerreroA"><div class="lugar"> Acapulco</div></div>
+        <section class="precio" id="guerreroA">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/acapulco.jpg" alt="">
+            <div class="descrDestino" id="guerreroA">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quas laudantium, temporibus atque repellendus blanditiis reiciendis animi aperiam eveniet molestias corporis sit earum nihil beatae nulla eius sunt obcaecati aliquam?</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="separador"></section>
+    
+    <section class="destinos" id="d3Yucatan">
+
+        <div class="titulos" id="Yucatan"><div class="lugar"> Yucatán </div></div>
+        <section class="precio" id="Yucatan">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/Yucatan.jpg" alt="">
+            <div class="descrDestino" id="Yucatan">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quas laudantium, temporibus atque repellendus blanditiis reiciendis animi aperiam eveniet molestias corporis sit earum nihil beatae nulla eius sunt obcaecati aliquam?</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="separador"></section>
+
+    <section class="destinos" id="d4Quintana">
+
+        <div class="titulos" id="Quintana"><div class="lugar"> Quintana Roo </div></div>
+        <section class="precio" id="Quintana">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/quintanaroo.jpg" alt="">
+            <div class="descrDestino" id="Quintana">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="separador"></section>
+
+    <section class="destinos" id="d1iColombia">
+
+        <div class="titulos" id="Colombia"><div class="lugar"> Colombia</div></div>
+        <section class="precio" id="Colombia">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/colombia1.jpg" alt="">
+            <div class="descrDestino" id="Colombia">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quas laudantium, temporibus atque repellendus blanditiis reiciendis animi aperiam eveniet molestias corporis sit earum nihil beatae nulla eius sunt obcaecati aliquam?</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="separador"></section>
+
+    <section class="destinos" id="d2iChile">
+
+        <div class="titulos" id="Chile"><div class="lugar"> Chile</div></div>
+        <section class="precio" id="Chile">
+            <div id="paquete1">
+                <div class="P1" id="contenido">Paquete 1</div>
+                <div class="P1" id="contenido">$20,000</div>
+                <div class="P1" id="contenido">Incluye: </div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P1" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete2">
+                <div class="P2" id="contenido">Paquete 1</div>
+                <div class="P2" id="contenido">$20,000</div>
+                <div class="P2" id="contenido">Incluye: </div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P2" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+            <div id="paquete3">
+                <div class="P3" id="contenido">Paquete 1</div>
+                <div class="P3" id="contenido">$20,000</div>
+                <div class="P3" id="contenido">Incluye: </div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+                <div class="P3" id="contenido">*Lorem ipsum dolor sit amet</div>
+            </div>
+        </section>
+        <div id="imgDestino">
+            <img src="Imagenes/chile.jpg" alt="">
+            <div class="descrDestino" id="Chile">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugit commodi quaerat unde rem eius at aliquam debitis eaque fuga, maxime ad et architecto vitae qui totam amet dignissimos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium nobis autem iusto, pariatur sit voluptates accusamus ab distinctio officia ullam hic aperiam tempore culpa saepe ad architecto. Mollitia, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quas laudantium, temporibus atque repellendus blanditiis reiciendis animi aperiam eveniet molestias corporis sit earum nihil beatae nulla eius sunt obcaecati aliquam?</div>
+            </div>
+        </div>
+
+    </section>
+            
+</body>
+</html>
+
+

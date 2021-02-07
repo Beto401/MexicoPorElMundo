@@ -1,0 +1,432 @@
+body{
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collasped);
+}
+:root
+{
+    --width: 300px;
+    --pading: 5px;
+    --bgcolor: rgb(0, 0, 0);
+    --hovercolor: rgb(25, 25, 25);
+    --width-collasped: 50px;
+}
+
+
+
+
+
+/*--------------Cuando el menu esta estapandido----------------------*/
+.bodyExpanded{
+    margin-left: var(--width);
+}
+
+.bodyExpanded #tituloApartados,
+.bodyExpanded #contenedorContenidoApartados,
+.bodyExpanded #imgApartado{
+    width: 700px;
+    float: left;
+}
+.bodyExpanded #contenedorContenidoApartados #contenidoApartadosImg{
+    width: 700px;
+    float: left;
+}
+.bodyExpanded #contenedorContenidoApartados #contenidoApartadosImg img{
+    display:block;
+    margin:auto;
+    margin-top: 10px;
+}
+.bodyExpanded #contenedorContenidoApartados #contenidoApartadosImg #contenidoImg{
+    width: 700px;
+    float: left;
+    height: auto;
+}
+.bodyExpanded #contenedorContenidoApartados #contenidoApartadosImg #contenidoImg #contenidoVariablePosicion{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.bodyExpanded .destinos{
+    width: 900px;
+}
+.bodyExpanded .destinos img{
+    width: 600px;
+}
+.bodyExpanded .destinos .precio{
+    width: 220px;
+    height: 330px;
+}
+
+.bodyExpanded .destinos .descrDestino{
+    width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------Menu lateral---------------------------*/
+#menuVertical{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+#menuVertical a {
+    color: white;
+    text-decoration: none;
+}
+/*Header*/
+#menuVertical #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+#menuVertical #header #titulo{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#menuVertical #header #titulo, #menuVertical #header #menu-btn {
+    vertical-align: middle;
+
+}
+#menuVertical #header #menu-btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collasped);
+    box-sizing: border-box;
+}
+#menuVertical #header #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+#menuVertical #header #menu-btn .btn-hamburger{
+    background-color:#fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+/*profile*/
+#menuVertical #profile{
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--pading);
+    text-align: center;
+}
+#menuVertical #profile #foto{
+    box-sizing: border-box;
+    padding: var(--pading);
+    margin:  auto;
+
+}
+#menuVertical #profile #foto img{
+    width: 60%;
+}
+#menuVertical #profile #foto, #menuVertical #profile #nombre{
+    font-size: 24px;
+    padding: var(--pading) 0;
+    overflow: hidden;
+}
+
+/*Items*/
+#menuVertical #menuItem{
+    overflow: hidden;
+}
+#menuVertical #menuItem .item{
+    width: var(--width);
+}
+
+#menuVertical #menuItem .item .icon,
+#menuVertical #menuItem .item .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#menuVertical #menuItem .item a {
+    display: block;
+}
+#menuVertical #menuItem .item a:hover {
+    background-color: var(--hovercolor);
+}
+#menuVertical #menuItem .item .icon{
+    box-sizing: border-box;
+    padding: var(--pading);
+    width: var(--width-collasped);
+}
+#menuVertical #menuItem .item .icon img{
+    width: 100%;
+}
+#menuVertical #menuItem .item .title {
+    padding: var(--pading) 0;
+}
+#menuVertical #menuItem .item.separator{
+    height: 1px;
+    border-bottom:solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+
+
+/*------------------------------------------------*/
+.menuExpandido{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menuExpandido #header #titulo {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--pading);
+}
+.menuExpandido #header #titulo span {
+    width: calc(var(--width)- var(--width-collasped)-5px);
+    overflow: hidden;
+    
+}
+.menuExpandido #profile #foto{
+    width: 200px;
+}
+.menuExpandido #profile #name{
+    width: 100%;
+}
+.menuEscondido{
+    width: var(--width-collasped);
+}
+.menuEscondido #header #titulo{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.menuEscondido #profile #name{
+    display: none;
+}
+.menuEscondido .item {
+    width: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------body------------------------------*/
+#inicio{
+    background: #000000 ;
+    padding: 70px;
+}
+#inicio #titulo{
+    width: 900px;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Brush Script Std, Arial, Helvetica, sans-serif;
+    margin: auto;
+    border-radius: 50px;
+
+}
+
+ #tituloApartados,
+ #contenedorContenidoApartados{
+    float: left;
+    width: 950px;
+    height: 100px;
+    
+    
+    
+    
+
+    
+}
+#eslogan{
+    
+    width: 500px;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+
+}
+aside {
+    border: black 2px solid;
+    border-radius: 25px;
+    margin:0px;
+    width: 300px;
+    height: 500px;
+    float: right;
+    box-sizing:border-box;
+    margin-top: 25px ;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+#promo{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background: black;
+    text-align: center;
+    width:  200px;
+    border-radius: 50px;
+    font-size: 21px;
+}
+#acapulco{
+    text-align: center;
+    font-size: 18px;
+}
+#descricionDePromo{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+}
+#imgPromo img{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+#contenedorContenidoApartados #contenidoApartados{
+    margin-left: 25px;
+    text-align: justify;
+}
+#contenedorContenidoApartados #contenidoApartadosImg img{
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+#contenedorContenidoApartados #contenidoApartadosImg{
+    float: left;
+    width: 950px;
+    height: 450px;
+    
+
+}
+.contenedorImgApartado #contenidoImg{
+    width: 500px;
+    float: right;
+    height: 400px;
+    
+}
+#contenedorContenidoApartados #contenidoApartadosImg #contenidoImg #contenidoVariablePosicion{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+
+/*-----------------------Destinos------------------*/
+.destinos{
+    width: 1100px;
+    height: 700px;
+    background: #d3d1d1;
+    display:block;
+    margin:auto;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    
+   
+}
+.separador{
+    width: 1200px;
+    height: 50px;
+}
+.titulos{
+    width: 1100;
+    height: 50px;
+    margin: auto;
+    border:#d3d1d1 1px solid;
+}
+.titulos .lugar{
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+    background: #000000;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    font-size: 24px;
+}
+.destinos img{
+    width: 700px;
+    margin-left: 15px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.destinos .descrDestino{
+    width: 1000px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 25px;
+}
+.destinos .precio{
+    width: 300px;
+    height: 350px;
+    float: right;
+    border: #000000 2px solid;
+    margin-right: 25px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+.destinos .precio #paquete1,
+.destinos .precio #paquete2,
+.destinos .precio #paquete3{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    
+    
+    
+}
+
+.destinos .precio #paquete1:hover{
+    background: rgb(94, 91, 91);
+    
+}
+.destinos .precio #paquete2:hover{
+    background: rgb(94, 91, 91);
+}
+.destinos .precio #paquete3:hover{
+    background: rgb(94, 91, 91);
+}
+
+
+#d1BCS{
+    margin-top: 800px;
+}
+
+    
+
+
+
